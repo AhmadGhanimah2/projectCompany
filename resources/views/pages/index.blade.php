@@ -7,7 +7,7 @@
     <meta name="description" content="One page parallax responsive HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/"/>
 
     <!-- CSS
     ================================================== -->
@@ -68,10 +68,19 @@ Fixed Navigation
             <div class="collapse navbar-collapse" id="navigation">
                 <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#section-one">Home</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#our-story">Our Story</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#our-services">Our services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">العربيه</a>
@@ -86,16 +95,22 @@ Fixed Navigation
 End Fixed Navigation
 ==================================== -->
 
-<div class="hero-slider">
-    <div class="slider-item hero-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Rozan<br>
-                       Rozan Contracting Est.</h1>
-                    <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-{{--                    <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"--}}
-{{--                       href="service.blade.php">Explore Us</a>--}}
+<div class="hero-slider" id="section-one">
+    <div class="slider-item th-fullpage hero-area" style="background-image: url(images/pngtree-the-construction-site-in-a-city-picture-image_2494612.jpg);">
+        <div class="slider-item hero-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">WELCOME TO Rozan
+                            CONSTRUCTION<br>
+                        </h1>
+                        <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5"> Since 1961 we remain
+                            reliable, trustworthy, and efficient General Contractor Company. Whether you need help on a
+                            small project or a larger job, we want to take the load off your shoulders by providing our
+                            specialized services. </p>
+                        {{--                    <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"--}}
+                        {{--                       href="service.blade.php">Explore Us</a>--}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,7 +119,7 @@ End Fixed Navigation
 <!--
 Start About Section
 ==================================== -->
-<section class="about-2 section" id="about">
+<section class="about-2 section" id="our-story">
     <div class="container">
         {{--        <div class="row justify-content-center">--}}
         {{--            <!-- section title -->--}}
@@ -122,20 +137,20 @@ Start About Section
         <div class="row">
 
             <div class="col-md-6">
-                <ul class="checklist">
-                    <h1>OUR STORY</h1>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
+                <h1>OUR STORY</h1>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
 
-                </ul>
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+
+               </p>
                 {{--                <a href="about.html" class="btn btn-main mt-20">Learn More</a>--}}
             </div>
             <div class="col-md-6 mb-4 mb-md-0">
-                <img loading="lazy" src="{{asset('images/test500.jpg')}}" class="img-fluid" alt="">
+                <img loading="lazy" src="{{asset('images/pic4.jpg')}}" class="img-fluid" alt="">
             </div>
         </div> <!-- End row -->
     </div> <!-- End container -->
@@ -143,15 +158,15 @@ Start About Section
 <!--
 Start About Section
 ==================================== -->
-<section class="service-2 section">
+<section class="service-2 section" id="our-services">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <!-- section title -->
                 <div class="title text-center">
                     <h2>Our Services</h2>
-{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur--}}
-{{--                        adipisicing elit. Voluptates, earum. </p>--}}
+                    {{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur--}}
+                    {{--                        adipisicing elit. Voluptates, earum. </p>--}}
                     <div class="border"></div>
                 </div>
                 <!-- /section title -->
@@ -162,30 +177,34 @@ Start About Section
                 <div class="row text-center">
                     <div class="col-md-6 col-sm-6">
                         <div class="service-item">
-                            <img src="{{asset('images/Logo-Test.png')}}" alt="">
+                            <img src="{{asset('images/pic1.jpg')}}" alt="">
                             <h4>Lorem Ipsum</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's</p>
                         </div>
                     </div><!-- END COL -->
                     <div class="col-md-6 col-sm-6">
                         <div class="service-item">
-                            <img src="{{asset('images/Logo-Test.png')}}" alt="">
+                            <img src="{{asset('images/pic2.jpg')}}" alt="">
                             <h4>Lorem Ipsum</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's</p>
                         </div>
                     </div><!-- END COL -->
                     <div class="col-md-6 col-sm-6">
                         <div class="service-item">
-                            <img src="{{asset('images/Logo-Test.png')}}" alt="">
+                            <img src="{{asset('images/pic3.jpg')}}" alt="">
                             <h4>Lorem Ipsum</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's</p>
                         </div>
                     </div><!-- END COL -->
                     <div class="col-md-6 col-sm-6">
                         <div class="service-item">
-                            <img src="{{asset('images/Logo-Test.png')}}" alt="">
+                            <img src="{{asset('images/pic4.jpg')}}" alt="">
                             <h4>Lorem Ipsum</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's</p>
                         </div>
                     </div><!-- END COL -->
                 </div>
@@ -194,8 +213,95 @@ Start About Section
     </div> <!-- End container -->
 </section> <!-- End section -->
 
+{{--<section class="container">--}}
+{{--    <div class="row justify-content-center">--}}
+{{--        <div class="col-lg-6">--}}
+{{--            <!-- section title -->--}}
+{{--            <div class="title text-center">--}}
+{{--                <h2>Our Services (Example 2 )</h2>--}}
+{{--                --}}{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur--}}
+{{--                --}}{{--                        adipisicing elit. Voluptates, earum. </p>--}}
+{{--                <div class="border"></div>--}}
+{{--            </div>--}}
+{{--            <!-- /section title -->--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
-
+{{--    <div class="row">--}}
+{{--        <div class="col-lg-6">--}}
+{{--            <div class="card">--}}
+{{--                <div class="row no-gutters">--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <img src="{{asset('images/test500.jpg')}}" class="card-img" alt="Image">--}}
+{{--                    </div>--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <h5 class="card-title">Card Title</h5>--}}
+{{--                            <p class="card-text">name</p>--}}
+{{--                            <p class="card-text">age : </p>--}}
+{{--                            <p class="card-text">yores</p>--}}
+{{--                            <a href="#" class="btn btn-primary">Read More</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="col-lg-6">--}}
+{{--            <div class="card">--}}
+{{--                <div class="row no-gutters">--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <img src="{{asset('images/test500.jpg')}}" class="card-img" alt="Image">--}}
+{{--                    </div>--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <h5 class="card-title">Card Title</h5>--}}
+{{--                            <p class="card-text">name</p>--}}
+{{--                            <p class="card-text">age : </p>--}}
+{{--                            <p class="card-text">yores</p>--}}
+{{--                            <a href="#" class="btn btn-primary">Read More</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="col-lg-6">--}}
+{{--            <div class="card">--}}
+{{--                <div class="row no-gutters">--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <img src="{{asset('images/test500.jpg')}}" class="card-img" alt="Image">--}}
+{{--                    </div>--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <h5 class="card-title">Card Title</h5>--}}
+{{--                            <p class="card-text">name</p>--}}
+{{--                            <p class="card-text">age : </p>--}}
+{{--                            <p class="card-text">yores</p>--}}
+{{--                            <a href="#" class="btn btn-primary">Read More</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="col-lg-6">--}}
+{{--            <div class="card">--}}
+{{--                <div class="row no-gutters">--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <img src="{{asset('images/test500.jpg')}}" class="card-img" alt="Image">--}}
+{{--                    </div>--}}
+{{--                    <div class="col-lg-6">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <h5 class="card-title">Card Title</h5>--}}
+{{--                            <p class="card-text">name</p>--}}
+{{--                            <p class="card-text">age : </p>--}}
+{{--                            <p class="card-text">yores</p>--}}
+{{--                            <a href="#" class="btn btn-primary">Read More</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 <!--
 Start Call To Action
 ==================================== -->
@@ -215,56 +321,57 @@ Start Call To Action
 <!--
 Start Counter Section
 ==================================== -->
-<section class="counter-wrapper section-sm">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 text-center">
-                <div class="title">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!-- first count item -->
-            <div class="col-md-4 col-sm-6 col-xs-6 text-center ">
-                <div class="counters-item">
-                    <i class="fa-solid fa-hourglass-start"></i>
-                    <div>
-                        <span class="counter" data-count="150">0</span>
-                    </div>
-                    <h3>Time</h3>
-                </div>
-            </div>
-            <!-- end first count item -->
+{{--<section class="counter-wrapper section-sm">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row justify-content-center">--}}
+{{--            <div class="col-xl-6 col-lg-8 text-center">--}}
+{{--                <div class="title">--}}
+{{--                    <h2>Lorem Ipsum</h2>--}}
+{{--                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been--}}
+{{--                        the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row">--}}
+{{--            <!-- first count item -->--}}
+{{--            <div class="col-md-4 col-sm-6 col-xs-6 text-center ">--}}
+{{--                <div class="counters-item">--}}
+{{--                    <i class="fa-solid fa-hourglass-start"></i>--}}
+{{--                    <div>--}}
+{{--                        <span class="counter" data-count="150">0</span>--}}
+{{--                    </div>--}}
+{{--                    <h3>Time</h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <!-- end first count item -->--}}
 
-            <!-- second count item -->
-            <div class="col-md-4 col-sm-6 col-xs-6 text-center ">
-                <div class="counters-item">
-                    <i class="fa-solid fa-user-shield"></i>
-                    <div>
-                        <span class="counter" data-count="130">0</span>
-                    </div>
-                    <h3>Project Completed</h3>
-                </div>
-            </div>
-            <!-- end second count item -->
+{{--            <!-- second count item -->--}}
+{{--            <div class="col-md-4 col-sm-6 col-xs-6 text-center ">--}}
+{{--                <div class="counters-item">--}}
+{{--                    <i class="fa-solid fa-user-shield"></i>--}}
+{{--                    <div>--}}
+{{--                        <span class="counter" data-count="130">0</span>--}}
+{{--                    </div>--}}
+{{--                    <h3>Project Completed</h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <!-- end second count item -->--}}
 
-            <!-- third count item -->
-            <div class="col-md-4 col-sm-6 col-xs-6 text-center ">
-                <div class="counters-item kill-border">
-                    <i class="fa-solid fa-people-arrows"></i>
-                    <div>
-                        <span class="counter" data-count="99">0</span>
-                    </div>
-                    <h3>People advice</h3>
+{{--            <!-- third count item -->--}}
+{{--            <div class="col-md-4 col-sm-6 col-xs-6 text-center ">--}}
+{{--                <div class="counters-item kill-border">--}}
+{{--                    <i class="fa-solid fa-people-arrows"></i>--}}
+{{--                    <div>--}}
+{{--                        <span class="counter" data-count="99">0</span>--}}
+{{--                    </div>--}}
+{{--                    <h3>People advice</h3>--}}
 
-                </div>
-            </div>
-            <!-- end third count item -->
-        </div> <!-- end row -->
-    </div> <!-- end container -->
-</section> <!-- end section -->
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <!-- end third count item -->--}}
+{{--        </div> <!-- end row -->--}}
+{{--    </div> <!-- end container -->--}}
+{{--</section> <!-- end section -->--}}
 
 {{--<!-- Start Testimonial--}}
 {{--=========================================== -->--}}
@@ -413,24 +520,26 @@ Start Counter Section
 {{--</section> <!-- end section -->--}}
 <section class="contact-us" id="contact">
     <div class="container">
-{{--        <div class="row justify-content-center">--}}
-{{--            <!-- section title -->--}}
-{{--            <div class="col-xl-6 col-lg-8">--}}
-{{--                <div class="title text-center">--}}
-{{--                    <h2>Get In Touch</h2>--}}
-{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate facilis eveniet maiores ab maxime nam--}}
-{{--                        ut numquam molestiae quaerat incidunt?</p>--}}
-{{--                    <div class="border"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- /section title -->--}}
-{{--        </div>--}}
+        {{--        <div class="row justify-content-center">--}}
+        {{--            <!-- section title -->--}}
+        {{--            <div class="col-xl-6 col-lg-8">--}}
+        {{--                <div class="title text-center">--}}
+        {{--                    <h2>Get In Touch</h2>--}}
+        {{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate facilis eveniet maiores ab maxime nam--}}
+        {{--                        ut numquam molestiae quaerat incidunt?</p>--}}
+        {{--                    <div class="border"></div>--}}
+        {{--                </div>--}}
+        {{--            </div>--}}
+        {{--            <!-- /section title -->--}}
+        {{--        </div>--}}
         <div class="row">
             <!-- Contact Details -->
             <div class="contact-details col-md-6 ">
                 <h1 class="mb-3">Contact </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex
-                    explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi
+                    blanditiis ex
+                    explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam
+                    labore
                     adipisci.</p>
                 <ul class="contact-short-info mt-4">
                     <li class="mb-3">
@@ -459,8 +568,8 @@ Start Counter Section
 
             <!-- Contact Form -->
             <div class="contact-form col-md-6 ">
-                <form id="contact-form" method="post" action="#" role="form">
-                    <form action=""></form>
+                <form action="{{ route('companies.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="form-group mb-4">
                         <input type="text" placeholder="Name" class="form-control" name="name" id="name" required>
                     </div>
@@ -468,9 +577,13 @@ Start Counter Section
                     <div class="form-group mb-4">
                         <input type="email" placeholder="Email" class="form-control" name="email" id="email" required>
                     </div>
+                    <div class="form-group mb-4">
+                        <input type="text" placeholder="Phone" class="form-control" name="phone" id="email" required>
+                    </div>
 
                     <div class="form-group mb-4">
-                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message" required></textarea>
+                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"
+                                  required></textarea>
                     </div>
                     <div id="cf-submit">
                         <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
@@ -491,14 +604,15 @@ Start Counter Section
             <div class="row justify-content-around">
                 <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
                     <h3>about</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard</p>
                 </div>
                 <!-- End of .col-sm-3 -->
 
                 <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
                     <ul>
                         <li>
-                            <h3>Our Services</h3>
+                            <h3>Our Services </h3>
                         </li>
                         <li><a href="http://www.google.com">Lorem Ipsum</a></li>
 
@@ -511,7 +625,6 @@ Start Counter Section
         </div> <!-- end container -->
     </div>
 </footer> <!-- end footer -->
-
 
 
 <!-- end Footer Area

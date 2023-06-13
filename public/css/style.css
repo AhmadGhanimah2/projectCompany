@@ -8,9 +8,13 @@ body {
 :root {
     --main-color: #1EA744;
     --main-color-sec: #0A588A;
-    --main-color-text : #fff
+    --main-color-text : #fff;
+    --border-raduis : 15px
 
 
+}
+html {
+    scroll-behavior: smooth;
 }
 p {
   font-family: "Source Sans Pro", sans-serif;
@@ -391,6 +395,10 @@ a:focus, a:hover {
 .logo h2 {
     color: white;
 }
+.service-item img{
+    width: 100%;
+    height: 100%;
+}
 
 .single-page-header {
   background-image: url("../images/about/about-header.jpg");
@@ -415,7 +423,7 @@ a:focus, a:hover {
 ==================================================================*/
 .navigation {
   transition: 0.3s all;
-    background: var(--main-color);
+    background: var(--main-color-text);
 }
 .navigation .logo-default {
   display: none;
@@ -429,7 +437,7 @@ a:focus, a:hover {
   vertical-align: 2px;
 }
 .navigation .navbar-light .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: black;
   font-size: 14px;
   line-height: 26px;
   padding: 20px 15px;
@@ -438,8 +446,8 @@ a:focus, a:hover {
   transition: 0.2s ease-in-out 0s;
 }
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
-  background: none;
-  color: var(--main-color-text);
+
+    color: black;
 }
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: #28ABE3;
@@ -505,7 +513,7 @@ a:focus, a:hover {
 }
 @media (max-width: 991px) {
     .service-item img {
-     width: 200px;
+     width: 500px;
     }
 }
 @media (max-width: 991px) {
@@ -530,7 +538,7 @@ a:focus, a:hover {
 @media (max-width: 991px) {
   .navigation {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
-    background: var(--main-color);
+    background: white;
   }
   .navigation .navbar-light .navbar-nav .nav-item .nav-link {
     color: #000;
@@ -548,10 +556,10 @@ a:focus, a:hover {
 }
 .sticky-header {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
-  background: var(--main-color-sec);
+  background: var(--main-color-text);
 }
 .sticky-header .navbar-light .navbar-nav .nav-item .nav-link {
-  color: white;
+  color: black;
 }
 .sticky-header .logo-white {
   display: none;
@@ -671,6 +679,8 @@ a:focus, a:hover {
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 50px;
+    background-color: var(--main-color-text);
+    border-radius: 15px;
 }
 @media (max-width: 768px) {
   .slider-item h1 {
@@ -687,6 +697,8 @@ a:focus, a:hover {
 .slider-item p {
   color: black;
   margin-bottom: 20px;
+    border-radius: var(--border-raduis);
+    background-color: var(--main-color-text);
 }
 
 
@@ -2029,6 +2041,7 @@ a:focus, a:hover {
   /* h1 font size home slider */
   h1 {
     font-size: 30px;
+      text-align: center;
   }
   .wrap-about {
     margin: 0 auto 80px;
